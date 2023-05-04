@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="FILES_2" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.3.1.23. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="Authorization" elementType="Header">
+            <stringProp name="Header.name">Authorization</stringProp>
+            <stringProp name="Header.value">Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODMyMDk0OTYsImp0aSI6ImMyNDhmNWI0LTM3MTAtNGNkNC05YmZlLTk0YzA5MjA3NGY3MiIsImZpcnN0TmFtZSI6IkFkbWluIiwibGFzdE5hbWUiOiJPbmUiLCJyb2xlTmFtZSI6IkFkbWluIiwicm9sZUlkIjoiMSIsImlkIjoiMTAwMSIsInVuaXF1ZUlkIjoiNjczOTcxYTAtYjIwNy00MDlmLTk3ZjMtZmFmMWZhNDg0MGM1IiwidGVuYW50Q29kZSI6IkZDMUFEQjM0ODUiLCJzZXNzaW9uSWQiOiIwMmE5OTQyZC0zN2FjLTQxNTUtYjBmYy03Njg4MzExYThkODIiLCJlbXBsb3llZWNvZGUiOiIxMDAwMDAwMDAwMDAiLCJuYmYiOjE2ODMyMDk0OTYsImV4cCI6MTY4MzIyMDI5NiwiaXNzIjoiR1RTIENBIDFDMyIsImF1ZCI6Ik1ld3Vyay5Db20ifQ.HNRskZKN7yo4_FUUpnqNq9VgzIMI7w7qMOiNM_OxMubBTWpzTrO5Y2eRZ1pQzkQxXaTxzePk0C6dF7avmMvNoLzFbwcxeIQBfzDuLXifUruM_Vjxh3Swi1MaGeTfQ-CgB1QlrQ5wWDeylzAZgjDa9L0kaduY79CtDgEaYwgPUubAWdLwsI3z7c0LAEvCGYfszGBBqz3lgbECqGkvSKfJC0T0j1YA09urw4lJfcCcxgouMFhjEuRj39Z1n06ZNYL3ABqedn1ML8MbnuxX1P43T9xtsXhf7bzU_MD_wheOfFjbJWSUEg7w96UL1n_K731oPeP8bhCedDrLq8Vdht0Fng</stringProp>
+          </elementProp>
+          <elementProp name="Mewurk-IpAddress" elementType="Header">
+            <stringProp name="Header.name">Mewurk-IpAddress</stringProp>
+            <stringProp name="Header.value"></stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua</stringProp>
+            <stringProp name="Header.value">&quot;Chromium&quot;;v=&quot;112&quot;, &quot;Google Chrome&quot;;v=&quot;112&quot;, &quot;Not:A-Brand&quot;;v=&quot;99&quot;</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-mobile" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
+            <stringProp name="Header.value">?0</stringProp>
+          </elementProp>
+          <elementProp name="Accept" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="Mewurk-Domain" elementType="Header">
+            <stringProp name="Header.name">Mewurk-Domain</stringProp>
+            <stringProp name="Header.value">dev-portal</stringProp>
+          </elementProp>
+          <elementProp name="sec-ch-ua-platform" elementType="Header">
+            <stringProp name="Header.name">sec-ch-ua-platform</stringProp>
+            <stringProp name="Header.value">&quot;Windows&quot;</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36</stringProp>
+          </elementProp>
+          <elementProp name="Domain" elementType="Header">
+            <stringProp name="Header.name">Domain</stringProp>
+            <stringProp name="Header.value">dev-portal</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">dev-app.mewurk.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+        <collectionProp name="AuthManager.auth_list"/>
+        <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration">0</stringProp>
+        <stringProp name="ThreadGroup.delay">0</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Test" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">false</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="My Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/myfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">a664d6ef-0586-4d5f-bb44-1eaf69c8ce06</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">a664d6ef-0586-4d5f-bb44-1eaf69c8ce06</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="tag/getemployeetags" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/tag/getemployeetags</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">603487f4-31ea-415a-8b96-3c8755e133cc</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">603487f4-31ea-415a-8b96-3c8755e133cc</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="My - File(s) Upload" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;documentDetail&quot;:[{&quot;tagId&quot;:null,&quot;documentName&quot;:&quot;Roster_April 2023.xlsx&quot;,&quot;validTill&quot;:null,&quot;documentInByte&quot;:&quot;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&quot;}],&quot;employeeCode&quot;:null,&quot;categoryId&quot;:1}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/document/upload</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">235384dd-99c8-46e0-abc5-f55c3997792d</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">235384dd-99c8-46e0-abc5-f55c3997792d</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="My Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/myfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">630166a2-2891-412c-a05b-38e95ef46667</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">630166a2-2891-412c-a05b-38e95ef46667</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/documentservice/employeefiles/getfilesemployeewise" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/employeefiles/getfilesemployeewise</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">1a928c29-c15c-4ed2-8a0d-6230de333a87</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">1a928c29-c15c-4ed2-8a0d-6230de333a87</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Files - View getfilesdocumentwise" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/employeefiles/getfilesdocumentwise</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">c05f5cd2-7951-4d9f-b084-5d1ed653c18b</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">c05f5cd2-7951-4d9f-b084-5d1ed653c18b</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/documentservice/tag/getemployeetags" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/tag/getemployeetags</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">d50e3554-ce29-482b-94d8-d3d9e12e12a0</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">d50e3554-ce29-482b-94d8-d3d9e12e12a0</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="My Files - Edit CTA" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;tagId&quot;:null,&quot;documentName&quot;:&quot;newnewEdited1.jpg&quot;,&quot;validTill&quot;:null}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/document/editfile/1c927717-3ebf-46f6-88b3-dc90c23bc710</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">c0ca1c0c-2737-417e-a3eb-9d03bd83d30f</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">c0ca1c0c-2737-417e-a3eb-9d03bd83d30f</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Employee Files - View getfilesdocumentwise" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/employeefiles/getfilesdocumentwise</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">de23b886-555d-41ea-a1ce-0c1283216dec</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">de23b886-555d-41ea-a1ce-0c1283216dec</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/employeeservice/employee/getemployees" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;departmentId&quot;:null,&quot;officeId&quot;:null,&quot;employeeCodes&quot;:[],&quot;EmployeeStatus&quot;:&quot;Active&quot;}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/employeeservice/employee/getemployees</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">ee0b79bf-f808-4696-ad87-deb6f879ea9e</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">ee0b79bf-f808-4696-ad87-deb6f879ea9e</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/companyfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">612ca24c-6de0-4888-8f6b-0b955335dc54</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">612ca24c-6de0-4888-8f6b-0b955335dc54</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/documentservice/tag/getcompanytags" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/tag/getcompanytags</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">a12e0ec7-e2ed-4f9e-b982-ad43e470df3d</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">a12e0ec7-e2ed-4f9e-b982-ad43e470df3d</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files - Edit CTA" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;tagId&quot;:13,&quot;documentName&quot;:&quot;Angry 1_Edited.png&quot;,&quot;validTill&quot;:null}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/document/editfile/6dd6be84-c41b-4eb5-ae97-2a67c70a7e3c</stringProp>
+            <stringProp name="HTTPSampler.method">PUT</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">20e5696e-5b28-42da-9c8c-3d64ff5b5039</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">20e5696e-5b28-42da-9c8c-3d64ff5b5039</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/companyfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">5553c15e-ab2f-4f67-8728-af55e040036f</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">5553c15e-ab2f-4f67-8728-af55e040036f</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/documentservice/tag/getcompanytags" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/tag/getcompanytags</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">fb294b0d-c4a7-440f-bf58-a6e4b159474f</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">fb294b0d-c4a7-440f-bf58-a6e4b159474f</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company - File(s) Upload " enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;documentDetail&quot;:[{&quot;tagId&quot;:null,&quot;documentName&quot;:&quot;clockInDetails_sample (3).xlsx&quot;,&quot;validTill&quot;:null,&quot;documentInByte&quot;:&quot;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&quot;}],&quot;employeeCode&quot;:null,&quot;categoryId&quot;:3}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/document/upload</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">1cfab7f8-8b40-4753-aeee-3ab691febd99</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">1cfab7f8-8b40-4753-aeee-3ab691febd99</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/companyfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">935c1bfb-047f-4dc1-9862-94a14710ba81</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">935c1bfb-047f-4dc1-9862-94a14710ba81</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="https://dev-app.mewurk.com/api/v1/companyservice/singleendpoints/getalllist" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/companyservice/singleendpoints/getalllist</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">8d3f8416-b131-4f06-9bda-34ea02fd496c</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">8d3f8416-b131-4f06-9bda-34ea02fd496c</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files - Share with CTA" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">{&quot;isAllEmployee&quot;:false,&quot;offices&quot;:[114],&quot;departments&quot;:[],&quot;groups&quot;:[],&quot;designations&quot;:[],&quot;grades&quot;:[],&quot;employeeTypes&quot;:[],&quot;includeEmployees&quot;:[],&quot;excludeEmployees&quot;:[],&quot;id&quot;:70}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/companyfiles/assignment</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">f2b3e479-61ca-4651-9623-085dd5012684</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">f2b3e479-61ca-4651-9623-085dd5012684</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Company Files listing page" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">api/v1/documentservice/companyfiles/getfiles</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="Mewurk-RequestId" elementType="Header">
+                  <stringProp name="Header.name">Mewurk-RequestId</stringProp>
+                  <stringProp name="Header.value">c8c48e26-02e6-416b-a457-f6eb4fb30877</stringProp>
+                </elementProp>
+                <elementProp name="RequestId" elementType="Header">
+                  <stringProp name="Header.name">RequestId</stringProp>
+                  <stringProp name="Header.value">c8c48e26-02e6-416b-a457-f6eb4fb30877</stringProp>
+                </elementProp>
+              </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename">C:\Users\Mahesh.Babu\Downloads\Settings2\file7.csv</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
